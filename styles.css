@@ -96,8 +96,9 @@ button:focus {
 }
 
 .music-header {
+    line-height: 110px;
+    place-self: center;
     font-size: 40px;
-    line-height: 100px;
     color: rgba(255, 255, 255, 0.8);
 }
 
