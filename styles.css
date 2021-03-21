@@ -101,7 +101,7 @@ button:focus {
 }
 
 #music {
-    margin-top: 40px;
+    margin-top: 70px;
     grid-area: 8 / 1 / 20 / -1;
 /*    border: 1px solid gold;*/
     display: flex;
@@ -116,7 +116,7 @@ button:focus {
 .albums {
 /*    border: 1px solid blue;*/
     width: 25%;
-    margin-right: 20px;
+    margin-right: 50px;
 }
 .title {
     color: white;
