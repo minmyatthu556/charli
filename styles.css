@@ -1,0 +1,166 @@
+@font-face {
+    font-family: 'CharliFont';
+    src: url('authenticuntitled-regulartrial-webfont.woff') format('woff'),
+        url('authenticuntitled-regulartrial-webfont.woff2') format('woff2');
+}
+
+body {
+    font-family: CharliFont;
+    text-align: center;
+    margin: auto;
+    background-color: rgb(116, 25, 25);
+    color: white;
+}
+
+img {
+    width: 100%;
+}
+
+button {
+    padding: 0;
+    border: none;
+    background: none;
+    outline: none;
+    font-family: CharliFont;
+    font-size: 25px;
+    color: white;
+    margin-top: 10px;
+}
+
+button:hover {
+    text-shadow: 3px 3px 3px gray;
+}
+
+button:focus {
+    border: none;
+    background: none;
+}
+
+.grid {
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(20,1fr);
+    grid-template-columns: repeat(9,1fr);
+}
+
+
+/*header*/
+.header {
+    color: rgba(255, 255, 255, 0.8);
+    background: linear-gradient( rgba(0, 0, 0, 0.664), rgba(0, 0, 0, 0.664) ), url("https://www.datocms-assets.com/39109/1610947013-1568909137803973-charli-xcx-jalouse-hannah-diamond-cover.jpg");
+    background-size: cover;
+    background-position: center;
+    grid-area: 1 / 1 / 7 / -1 ;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(10, 1fr);
+}
+
+.logo {
+    grid-area: 4 / 8 / 5 / -1;
+    font-size: 50px;
+    place-self: end;
+    justify-self: end;
+    margin-right: 30px;
+}
+
+.nav {
+    grid-area: 1 / 9 / 2 / -1;
+}
+
+.nav div {
+    display: inline-block;
+    margin-left: 30px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.bio {
+    grid-area: 5 / 6 / 6 / -1;
+    text-align: right;
+    margin-top: 20px;
+    font-size: 20px;
+    margin-right: 30px;
+}
+
+/*Music*/
+.music-header-container {
+    grid-area: 7 / 1 / 8 / -1;
+    background-color: rgb(133, 42, 42);
+}
+
+.music-header {
+    font-size: 40px;
+    line-height: 100px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+#music {
+    grid-area: 8 / 1 / 20 / -1;
+/*    border: 1px solid gold;*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.art {
+    margin-top: 10px;
+}
+
+.albums {
+/*    border: 1px solid blue;*/
+    width: 25%;
+    margin-right: 20px;
+}
+.title {
+    color: white;
+}
+
+.track {
+/*    border: 1px solid black;*/
+    margin-top: 10px;
+    line-height: 25px;
+}
+
+/*social*/
+#social {
+    grid-area: 20 / 1 / -1 / -1;
+    background-color: rgb(133, 42, 42);
+    align-self: end;
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: 1fr;
+}
+
+.insta {
+    grid-area: 1 / 8 / 2 / 9;
+    align-self: center;
+}
+
+.insta img {
+    padding: 10px;
+    width: 30%;
+}
+
+.twitter {
+    grid-area: 1 / 9 / 2 / 10;
+    align-self: center;
+}
+
+.twitter img {
+    width: 30%;
+}
+
+.youtube {
+    grid-area: 1 / 10 / 2 / 11;
+    align-self: center;
+}
+
+.youtube img {
+    width: 30%;
+}
