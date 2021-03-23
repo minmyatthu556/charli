@@ -10,6 +10,7 @@ body {
   margin: auto;
   background-color: rgb(116, 25, 25);
   color: white;
+  height: fit-content;
 }
 
 img {
@@ -91,12 +92,13 @@ button:focus {
 
 /*Music*/
 .music-header-container {
+  height: 100px;
   grid-area: 7 / 1 / 8 / -1;
   background-color: rgb(133, 42, 42);
 }
 
 .music-header {
-  line-height: 110px;
+  line-height: 100px;
   place-self: center;
   font-size: 40px;
   color: rgba(255, 255, 255, 0.8);
@@ -105,7 +107,6 @@ button:focus {
 #music {
   margin-top: 70px;
   grid-area: 8 / 1 / 20 / -1;
-  /*    border: 1px solid gold;*/
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -116,16 +117,14 @@ button:focus {
 }
 
 .albums {
-  /*    border: 1px solid blue;*/
   width: 25%;
-  margin-right: 50px;
+  margin: 20px;
 }
 .title {
   color: white;
 }
 
 .track {
-  /*    border: 1px solid black;*/
   margin-top: 10px;
   line-height: 25px;
 }
